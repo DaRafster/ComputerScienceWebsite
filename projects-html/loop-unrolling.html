@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Loop Unrolling</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+  </head>
+  
+  <body>
+  	
+    <main>
+    
+      <div class="big-wrapper">
+
+        <header>
+        
+          <div class="container">
+            <div class="logo">
+              <h3>Code <span>Essentials</span></h3>
+            </div>
+ 
+            <div class="links">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../experiences.html">Experiences</a></li>
+                <li><a href="../skills.html">Skills</a></li>
+                <li><a href="../careers.html">Careers</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+          
+          <br><br><br><br><br>
+          
+          <div class="content-container">
+
+           <div>
+           		<h1>Loop <span>Unrolling</span></h1>
+           		<p name = "paragraph">The topic "loop unrolling" was something I learned fairly recently and a topic which I found pretty interesting.
+           		This is a simple project which takes small effort but helps you develop some coding habits which can prove useful in the future.
+           		For this project, all your are required to do is to create 3 types of loops, a for loop, a while loop, and a do-while loop. Each loop
+           		will have one line of code in their body such as adding to a variable. Next, replicate those 3 loops, except do more than one iteration in the new loop. 
+           		For example, one loop in the the previous loop would do sum = sum + 1. But in the new loop, you would do sum = sum + 1 + sum + 2 + sum + 3 which 
+           		would be three iterations in a single loop. Adjust the variable incrementer accordingly as well.</p>
+           		
+           		<p name = "paragraph" id = "p1">Using libraries, measure how long the new loops execute compared to the old loops. You should see the new loops have 
+           		a significant increase in execution time. This is the topic known as "loop unrolling". In the image on the right, I used an online compiler which 
+           		converts C code into assembly(x86-64). In the assembly code, you should see instructions called "jmp". These refer to jumps in code such as if statements
+           		or loops. The less jumps your code has, the more efficient your code will be. Compilers like executing instructions in sequential order rather than
+           		jumping all over the place. With this simple project, you'll be able to develop a better understanding of machine code, so I highly encourage you try it!</p>
+           		
+           		<btn name = "readMore" class = "btn">Read More...</btn>
+           		<btn name = "readMore" class = "btn">Back</btn>
+           </div>
+           
+           <div>
+           		<img src = "../images/img15.png">
+           </div>
+
+      	 </div>
+        
+        </header>
+
+        </div>
+          
+          <br><br><br>
+          
+    	</main>
+		
+		<script src="../scripts/landing-page.js"></script>
+		<script src = "../scripts/portfolio.js"></script>
+		
+	</body>
+</html>

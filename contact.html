@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Code Essentials</title>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    
+  </head>
+  
+  <body>
+  	
+    <main>
+    
+      <div class="big-wrapper">
+
+        <header>
+        
+          <div class="container">
+            <div class="logo">
+              <h3>Code <span>Essentials</span></h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+          
+          <div id = "overlay">
+          	<form onsubmit = "event.preventDefault(); validateForm()">
+          		<h1>Contact Us</h1>
+          		
+          		<label for = "name">Name:</label>
+          		<input type = "text" id = "name" placeholder = "Your name">
+          		<small class = "error"></small>
+          		
+          		<label for = "name">Email:</label>
+          		<input type = "text" id = "email" placeholder = "Your email">
+          		<small class = "error"></small>
+          		
+          		<label for = "name">Message:</label>
+          		<textarea id = "message" placeholder = "Your message" rows = "6"></textarea>
+          		<small class = "error"></small>
+          		
+          		<div class = "center">
+          			<input type = "submit" class = "btn" value = "Send Message">
+          			<p id = "success"></p>
+          		</div>
+          		
+          	</form>
+          	
+          	
+          </div>
+        
+        </div>
+        </header>
+    
+    </main>
+    
+    <script src="scripts/contact.js"></script>
+		
+	</body>
+</html>
